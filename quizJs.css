@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background: linear-gradient(to right, rgba(127, 255, 212, 0.498), rgba(60, 67, 67, 0.521));
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}

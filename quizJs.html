@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
-</head>
-<body>
-    <h1>Quiz app</h1>
-</body>
+    <link rel="stylesheet" href="quizJs.css" />
+  </head>
+  <body class="body">
+    <div class="container" id="container">
+      <h1>Simple Quiz</h1>
+      <hr />
+      <div id="questioncard" class="questioncard">
+        <h2 class="questions" id="questions">
+          1. What is the full form of PSLV
+        </h2>
+        <div class="ansbtn" id="ansbtn">
+          <button class="btn">
+            <h3>a. Polar Satellite Launch vehicle</h3></button
+          ><br /><br />
+          <button class="btn">
+            <h3>b. Propulsion Satellite Launch vehicle</h3></button
+          ><br /><br />
+          <button class="btn">
+            <h3>c. Propultion Solid Launch vehicle</h3></button
+          ><br /><br />
+          <button class="btn">
+            <h3>d. Polar Satellite Liquid vehicle</h3>
+          </button>
+        </div>
+        <button id="next-btn" class="next-btn">Next</button>
+      </div>
+    </div>
+
+    <script src="quizJs.js" /></script>
+  </body>
 </html>
