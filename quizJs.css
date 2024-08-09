@@ -9,3 +9,33 @@
     text-align: center;
     display: flex;
 }
+
+.questioncard {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.518);
+    color: rgba(240, 240, 240, 0.9);
+    border-radius: 2px 15px;
+    width: 700px;
+    height: 500px;
+}
+
+.ansbtn {
+    margin: 70px;
+    padding: 10px;
+}
+
+.btn {
+    transition-duration: 0.7s;
+    margin: 3px;
+    padding: 10px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    width: 100%;
+    text-align: left;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(46, 46, 46);
+}
+
