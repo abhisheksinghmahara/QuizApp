@@ -1,3 +1,15 @@
+const entered_name=prompt("Enter name", "");
+document.getElementById("individual_name").innerHTML=entered_name;
+
+const questionElement = document.getElementById('questions');
+const answerButtons = document.getElementById('ansbtn');
+const nextButton = document.getElementById('next-btn');
+
+function changeColor(newColor) {
+    const elem = document.getElementById("body");
+    elem.style.backgroundColor = newColor;
+  }
+
 const questions = [
     {
         question: "Which is the largest desert in the world?",
@@ -45,3 +57,5 @@ const questions = [
         ]
     },
 ]
+let currentQuestionIndex = 0;
+let score = 0;
