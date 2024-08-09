@@ -6,10 +6,20 @@
     <title>Quiz</title>
     <link rel="stylesheet" href="quizJs.css" />
   </head>
-  <body class="body">
+  <body id="body" class="body">
     <div class="container" id="container">
       <h1>Simple Quiz</h1>
+<!-- buttons and name show -->
+      <div>
+        <span>
+            <button class="bg_buttons" onclick="changeColor('blue');">Blue</button>
+            <button class="bg_buttons" onclick="changeColor('red');">Red</button>
+            <button class="bg_buttons" onclick="changeColor('white');">Reset colour</button>
+            <span class="individual_name" id="individual_name">Name</span>
+        </span>
+      </div>
       <hr />
+      <!-- question show card -->
       <div id="questioncard" class="questioncard">
         <h2 class="questions" id="questions">
           1. What is the full form of PSLV
@@ -33,5 +43,6 @@
     </div>
 
     <script src="quizJs.js" /></script>
+ 
   </body>
 </html>
