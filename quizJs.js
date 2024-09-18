@@ -6,10 +6,27 @@ const questionElement = document.getElementById('questions');
 const answerButtons = document.getElementById('ansbtn');
 const nextButton = document.getElementById('next-btn');
 
-function changeColor(newColor) {
-    const elem = document.getElementById("body");
-    elem.style.backgroundColor = newColor;
-  }
+function changeColor(mode) {
+    const elem = document.body; // Use document.body to directly target the body element
+    switch (mode) {
+        case 'blue':
+            elem.style.backgroundColor = 'blue';
+            elem.style.color = 'white'; // Adjust text color for better readability
+            break;
+        case 'dark':
+            elem.style.backgroundColor = 'black'; // Dark background
+            elem.style.color = '#fff'; // Light text color
+            break;
+        case 'light':
+            elem.style.backgroundColor = '#FFF8DC'; // Light background
+            elem.style.color = '#000'; // Dark text color
+            break;
+        default:
+            elem.style.backgroundColor = ''; // Reset to default
+            elem.style.color = ''; // Reset to default
+    }
+}
+
 // set of questions 
 const questions = [
     {
@@ -129,5 +146,4 @@ nextButton.addEventListener('click',()=>{
         startQuiz();
     }
 })
-console.log(score)
 startQuiz();
