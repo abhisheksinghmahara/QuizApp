@@ -5,3 +5,4 @@
 # Next button styling
 # Quiz score counts and result shown at end
 # This quiz is ready to be played you can add some more quesions as well
+# Added media query and improved respinsiveness

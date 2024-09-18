@@ -1,31 +1,49 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
-.body {
-    background: linear-gradient(to right, rgba(127, 255, 212, 0.498), rgba(60, 67, 67, 0.521));
-    justify-content: center;
-    text-align: center;
+body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: azure;
+    transition: background-color 1s ease, color 0.5s ease;
+}
+
+.container {
+    box-sizing: border-box; 
+    width: 100%;
+    max-width: 700px; 
+    padding: 1rem;
+    margin: 0 auto; 
+}
+.bgbtncontainer{
+    box-sizing: border-box;
+    justify-content: left   ;
 }
 .individual_name{
     /* margin-left: 900px; */
     font-weight : 600;
-    padding-left: 500px;
+    padding-left: 150px;
     font-size: x-large;
 
 }
 .questioncard {
+    border: 0.05px solid gray;
     text-align: left;
     margin: 10px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.518);
     color: rgba(240, 240, 240, 0.9);
     border-radius: 2px 15px;
-    width: 700px;
-    height: 500px;
+    width: 100%; 
+    max-width: 700px; 
+    box-sizing: border-box; 
 }
+
 
 .ansbtn {
     margin: 70px;
@@ -115,4 +133,28 @@ li {
 
 .incorrect {
     background: rgb(158, 97, 97);
+}
+@media (max-width: 768px) {
+    .individual_name {
+        font-size: 1.2rem; /* Smaller font size on mobile */
+        padding-left: 40px; /* Remove padding */
+    }
+
+    .questioncard {
+        padding: 0.5rem; /* Reduce padding */
+    }
+
+    .btn {
+        font-size: 0.9rem; /* Smaller font size on mobile */
+    }
+
+    .bg_buttons {
+        width: 100%;
+        max-width: 100px; /* Ensure buttons fit well on smaller screens */
+    }
+
+    .next-btn {
+        width: 100%;
+        font-size: 1.5rem; /* Adjust font size */
+    }
 }
